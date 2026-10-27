@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "we-kb-fpa"
+version = "0.3.0"
+description = "Wireless-edge task offloading simulation and reproducible research experiments"
+requires-python = ">=3.12"
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+parquet = ["pyarrow"]
+gurobi = ["gurobipy"]
+
+[project.scripts]
+we-kb-fpa = "experiments.run_all:main"
+we-kb-fpa-plots = "experiments.plot_results:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["we_kb_fpa*", "experiments*"]

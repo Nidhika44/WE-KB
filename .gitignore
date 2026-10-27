@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.runtime-deps/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Experiment outputs, checkpoints and runtime artifacts
+output/
+outputs/
+.verification/
+*.log
+*.pkl
+*.npz
+*.pending
+*.lock
+*.tmp
+
+# Environment variables, credentials and secrets
+.env
+.env.*
+!.env.example
+.oci/
+*.pem
+*.key
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+
+# IDE, Editor and OS metadata
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
